@@ -1,0 +1,27 @@
+## Set tab size to 8 spaces
+set tabsize 8
+
+## Convert tabs to spaces automatically
+set tabstospaces
+
+## Enable auto-indentation
+set autoindent
+
+## Highlight syntax for C files
+syntax "c" "\\.c$"
+color green "\\<(if|else|for|while|return|switch|case|default)\\>"
+color blue "\\<(int|char|float|double|void|long|short|signed|
+unsigned|static|const|struct|union|enum)\\>"
+color cyan "\\<(printf|scanf|fopen|fclose|malloc|free|sizeof|memcpy|memset)\\>"
+color brightyellow "\\<(NULL|true|false)\\>"
+color red "\\/\\*.*\\*\\/"  ## comments /* */
+color red start="\\/\\*" end="\\*\\/"  ## multi-line comments
+color red "//.*$"  ## comments starting with //
+color brightmagenta ""[^\"]*""  ## strings
+color brightblue "-?[0-9]+(\\.[0-9]+)?([eE][-+]?[0-9]+)?([fFlLuU]?)"  ## numbers
+
+## Enable line numbering
+set linenumbers
+
+## Display column position
+set const
