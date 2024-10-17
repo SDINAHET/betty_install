@@ -11,22 +11,22 @@ https://github.com/alx-tools/Betty/wiki/Tools:-Vim
 https://github.com/alx-tools/Betty/wiki/Tools:-Atom
 
 
-Here for custom nano with Betty linter
+Here for custom nano with `Betty linter`
 
-This guide provides steps to configure the \`nano\` text editor to follow the Betty coding style guide, especially for C programming.
+This guide provides steps to configure the `nano` text editor to follow the Betty coding style guide, especially for C programming.
 
-To configure the nano text editor to adhere to the Betty style guide, especially for C code, you can set up syntax highlighting, enable tab to space conversion, and ensure proper indentation rules.
+To configure the `nano text editor` to adhere to the Betty style guide, `especially for C code`, you can set up syntax highlighting, enable tab to space conversion, and ensure proper indentation rules.
 
-Here’s how to set up nano to comply with the Betty coding style:
+Here’s how to set up nano to comply with the Betty coding style/doc:
 
 ## Requirements
 
-- \`nano\` text editor
-- Betty style checker (optional but recommended)
+- `nano` text editor
+- `Betty style/doc checker` (optional but recommended for Ubuntu 22.04)
 
 ## Step 1: Open/Create Nano Configuration File
 
-To configure \`nano\`, you need to edit the \`.nanorc\` file in your home directory:
+To configure `nano`, you need to edit the `\.nanorc` file in your home directory:
 
 ```bash
 nano ~/.nanorc
@@ -36,7 +36,7 @@ If the file does not exist, this command will create it.
 
 ## Step 2: Add Betty-Compliant Configuration
 
-Add the following code to \`.nanorc\` to enforce the Betty style:
+Add the following code to `\.nanorc` to enforce the Betty style:
 
 ```bash
 ## Set tab size to 8 spaces
@@ -70,19 +70,19 @@ set const
 
 ## Step 3: Save the Configuration
 
-After adding the above lines to .nanorc, save the file by pressing:
+After adding the above lines to `.nanorc`, save the file by pressing:
 
-1. \`Ctrl + X\`
-2. Then \`Y\` to confirm
-3. Press \`Enter\` to exit
+1. `Ctrl + X`
+2. Then `Y` to confirm
+3. Press `Enter` to exit
 
 ## Step 4: Using Nano
 
-Now, every time you edit C code in \`nano\`, the editor will:
+Now, every time you edit C code in `nano`, the editor will:
 
-- Follow the Betty-compliant indentation rules (tab size = 8, convert tabs to spaces).
-- Highlight C keywords, types, strings, and numbers.
-- Show line numbers and current column positions to help adhere to the 80-character limit.
+- Follow the `Betty-compliant` indentation rules (tab size = 8, convert tabs to spaces).
+- `Highlight C keywords`, types, strings, and numbers.
+- `Show line numbers` and `current column positions` to help adhere to the `80-character limit`.
 
 ### Explanation of the configuration:
 
@@ -99,7 +99,7 @@ Now, whenever you open a C file in nano, the editor will follow Betty's indentat
 
 ## Step 6: Install Betty Style/Doc Checker in Ubuntu 22.04
 
-To automate the process of checking if your code follows the Betty style, you can install the \`betty\` tool:
+To automate the process of checking if your code follows the Betty style, you can install the `betty` tool:
 
 1. Clone the Betty repository:
 
@@ -108,10 +108,11 @@ git clone https://github.com/hs-hq/Betty
 git clone https://github.com/holbertonschool/Betty.git
 ```
 
-2. Install the Betty style checker with:
+2. Install the `Betty style/doc checker` with:
 
 Set up Betty with a symbolic link
 ```bash
+chmod a+x install.sh
 sudo ./install.sh
 ```
 
@@ -124,5 +125,5 @@ betty <filename.c>
 
 ## Conclusion
 
-This configuration ensures that \`nano\` will format your C code according to the Betty style guide. Additionally, the Betty checker tool can help automate the process of verifying code style compliance.
+This configuration ensures that `nano` will format your C code according to the Betty style guide. Additionally, the `Betty checker tool` can help automate the process of verifying code style and doc compliance.
 EOL
