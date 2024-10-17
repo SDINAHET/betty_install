@@ -92,11 +92,11 @@ Now, every time you edit C code in \`nano\`, the editor will:
 - set linenumbers: Enables line numbers on the left, which can help with identifying lines that exceed the limit.
 - set const: Shows the current column position, helpful to keep track of the 80-character limit.
 
-## Step 4: Use Nano with the Configuration
+## Step 5: Use Nano with the Configuration
 
 Now, whenever you open a C file in nano, the editor will follow Betty's indentation and syntax highlighting rules, and convert tabs to spaces, ensuring that your code style is compliant with Betty.
 
-### Optional: Install Betty Style Checker
+## Step 6: Install Betty Style/Doc Checker in Ubuntu 22.04
 
 To automate the process of checking if your code follows the Betty style, you can install the \`betty\` tool:
 
