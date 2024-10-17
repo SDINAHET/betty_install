@@ -1,5 +1,6 @@
 # Betty Style Configuration for Nano
 
+https://github.com/hs-hq/Betty
 
 https://github.com/alx-tools/Betty/wiki
 
@@ -103,6 +104,7 @@ To automate the process of checking if your code follows the Betty style, you ca
 1. Clone the Betty repository:
 
 ```bash
+git clone https://github.com/hs-hq/Betty
 git clone https://github.com/holbertonschool/Betty.git
 ```
 
