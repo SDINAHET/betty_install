@@ -42,6 +42,9 @@ Add the following code to `\.nanorc` to enforce the Betty style:
 ## Set tab size to 8 spaces
 set tabsize 8
 
+## Set  8 spaces size to tab
+## set tabgives "        "
+
 ## Convert tabs to spaces automatically
 set tabstospaces
 
@@ -66,6 +69,9 @@ set linenumbers
 
 ## Display column position
 set const
+
+## limit 80 column
+set fill 80
 ```
 
 ## Step 3: Save the Configuration
