@@ -171,3 +171,35 @@ done
 Once saved, exit file and `change permissions` to apply to all users with `chmod a+x betty`
 Move the betty file into `/bin/ directory` or somewhere else in your `$PATH with sudo mv betty /bin/`
 You can now type betty <filename> to run the `Betty linter`!
+
+
+
+## Exportation extension VSCode
+Comment exporter la liste des extensions vscode sur un autre PC?
+
+Pour exporter la liste des extensions installées sur Visual Studio Code et les réinstaller sur un autre PC, voici comment procéder :
+
+### Exporter les extensions
+
+1.Ouvrir le terminal de VS Code sur l’ordinateur d’origine.
+
+2.Exécutez la commande suivante pour lister toutes les extensions installées et les enregistrer dans un fichier texte :
+
+```bash
+code --list-extensions > extensions-list.txt
+```
+Cette commande crée un fichier nommé `extensions-list.txt` dans le répertoire actuel contenant les noms de toutes les extensions installées.
+
+3.Copiez le fichier `extensions-list.txt` sur votre nouvel ordinateur (par exemple, via un service cloud ou une clé USB).
+
+### Importer les extensions
+
+1.Ouvrir le terminal de VS Code sur le nouvel ordinateur.
+
+2.Exécutez la commande suivante pour installer toutes les extensions listées dans le fichier :
+```bash
+cat extensions-list.txt | xargs -n 1 code --install-extension
+```
+Cette commande lira chaque ligne du fichier et installera l'extension correspondante.
+
+Avec ces étapes, vous pouvez facilement transférer toutes vos extensions VS Code d'un ordinateur à un autre.
